@@ -7,5 +7,5 @@ class Solution(object):
         else:
             leftDepth = self.maxDepth(root.left);
             rightDepth = self.maxDepth(root.right);
-            depth = max(leftDepth, rightDepth);
+            depth = max(leftDepth, rightDepth) + 1;
         return depth;
